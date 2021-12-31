@@ -1,5 +1,5 @@
 {
-  "name": "htmlparser-node",
+  "name": "@grunmouse/htmlparser-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "node": ">=9.5.0"
   },
   "author": {
-    "name": "John Resig"
+    "name": "Erik Arvidsson"
   },
-  "license": "MIT",
+  "license": "MPL",
   "dependencies": {}
 }
