@@ -145,7 +145,7 @@
 			if ( html == last )
 				throw new Error("Parse Error: " + last.substr(0, 10));
 			last = html;
-			console.log(last.length);
+			//console.log(last.length);
 		}
 		
 		// Clean up any remaining tags
@@ -210,7 +210,7 @@
 			// Find the closest opened tag of the same type
 			else
 				for ( var pos = stack.length - 1; pos >= 0; pos-- )
-					if ( stack[ pos ] == tagName )
+					if ( stack[ pos ].toLowerCase() == tagName.toLowerCase() )
 						break;
 			
 			if ( pos >= 0 ) {
@@ -250,7 +250,7 @@
 				results += "<!--" + text + "-->";
 			}
 		});
-		console.log(2);
+		//console.log(2);
 		return results;
 	};
 	
